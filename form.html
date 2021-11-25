@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+
+        background: url('img/bg1.jpg');
+        background-size: 100%;
+        background-position: center;
+
+    }
+
+    div.main {
+        width: 400px;
+        margin: 100px auto 0px auto;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        color: rgb(5, 77, 106)
+    }
+
+    div.regform {
+        background-color: white;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 3px solid rgb(80, 78, 78);
+        padding: 10px;
+        
+
+
+    }
+
+    form#register {
+        margin: 18px;
+    }
+
+    label {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: bold;
+        color: black;
+        padding: 10px;
+    }
+
+    input#name {
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 8px;
+        background-color: rgb(218, 244, 247);
+        color: black;
+        outline: 0;
+
+    }
+
+    input#submit {
+        width: 200px;
+        padding: 3px;
+        margin: 8px;
+        font-size: 18px;
+        font-family: sans-serif;
+        border-radius: 14px;
+        font-weight: 600;
+        background-color: rgb(135, 201, 226);
+        border: 2px solid black;
+        text-align: center;
+
+
+    }
+
+    .gen {
+        font-family: cursive;
+        font-size: 15px;
+        
+    }
+
+    .lang {
+        font-family: cursive;
+        font-size: 15px;
+        
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Registration Form</h1>
+        <div class="regform">
+            <!-- <form> -->
+            <form id="register" method="post">
+                <label>First Name :</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your First Name" required> <br>
+                <label>Last Name :</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required> <br>
+                <label>Mobile Number :</label><br>
+                <input type="tel" name="mobno" id="name" placeholder="Enter Your Mobile Number" required> <br>
+                <label>E-mail :</label><br>
+                <input type="email" name="email_id" id="name" placeholder="Enter Your valid E-mail" required> <br>
+                <label>Password :</label><br>
+                <input type="password" name="password" id="name" placeholder="Enter Your password" required> <br>
+
+
+                <label>Gender :</label>
+                <br>
+                <div class="gen">
+
+                    <input type="radio" name="gender" id="male">
+                    <span id="male">Male</span>
+                    <input type="radio" name="gender" id="female">
+                    <span id="female">Female</span>
+                    <input type="radio" name="gender" id="others">
+                    <span id="others">Others</span><br>
+                </div>
+
+
+
+                <label>Known Languages :</label><br>
+                <div class="lang">
+                    <input type="checkbox" name="lang" id="marathi">
+                    <span id="marathi">Marathi</span>
+                    <input type="checkbox" name="lang" id="hindi">
+                    <span id="hindi">Hindi</span>
+                    <input type="checkbox" name="lang" id="english">
+                    <span id="english">English</span>
+                    <br>
+                </div>
+                <input type="submit" id="submit">
+
+
+
+
+        </div>
+
+    </div>
+
+    </form>
+</body>
+
+</html>
